@@ -10,6 +10,11 @@
 // import './js/module-3-destructuring.js'
 // import './js/module-3-spread-rest.js'
 
-// PRACTIC
-import './practice/module-3.js'
+// import './js/module-4-cb.js'
+// import './js/module-4-stack.js'
+import './js/module-4-closure.js'
 
+// PRACTIC
+// import './practice/module-3.js'
+
+// import './js/this.js'
