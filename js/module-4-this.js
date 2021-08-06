@@ -1,4 +1,5 @@
-// "use strict"
+'use strict'
+// console.log(this)
 // this - local variable
 // this - is a pronoun of object for his props & methods
 // определяется объектом, в контексте которого
@@ -9,14 +10,13 @@
 
 // GLOBAL
 // this without 'use strict' || module => window
-// console.log(this)
 function showThisDecl() {
   console.log(this)
 }
 // showThisDecl()
 
 const showThisExpr = function () {
-  console.log(this)
+  // console.log(this)
 }
 // showThisExpr()
 
@@ -168,14 +168,14 @@ function getNotFalsyValues(element, notFalsyValues) {
 
 // 4
 const ordersA = [
-  { name: 'Phone', price: 12300, deliveryProgress: 50, type: 0 },
+  { name: 'Phone', price: 12300, deliveryProgress: 47, type: 0 },
   { name: 'Computer', price: 230000, deliveryProgress: 100, type: 1 },
   { name: 'Tablet', price: 5000, deliveryProgress: null, type: 2 },
 ]
 
 const ordersB = [
-  { name: 'Phone', price: 12300, deliveryProgress: 50, type: 0 },
-  { name: 'Tablet', price: 5000, deliveryProgress: null, type: 2 },
+  { name: 'Phone', price: 12300, deliveryProgress: 45, type: 0 },
+  { name: 'Tablet', price: 5000, deliveryProgress: undefined, type: 2 },
 ]
 
 function showDeliveryStatus(array) {
@@ -187,19 +187,57 @@ function showDeliveryStatus(array) {
     // let { deliveryProgress: progress } = order
     progress = String(order.deliveryProgress)
     console.log(progress)
-    if (progress == 100) {
-      message = `Done`
-      results.push(message)
-    } else if (progress < 100 && progress >= 1) {
-      message = `In progress`
-      results.push(message)
-    } else if (progress === 'null') {
-      message = `Ready to delivery`
-      results.push(message)
-    } else {
-      message = 'Not Ordered'
-      results.push(message)
+    // if (progress == 100) {
+    //   message = `Done`
+    //   results.push(message)
+    // } else if (progress < 100 && progress >= 1) {
+    //   message = `In progress`
+    //   results.push(message)
+    // } else if (progress === 'null') {
+    //   message = `Ready to delivery`
+    //   results.push(message)
+    // } else {
+    //   message = 'Not Ordered'
+    //   results.push(message)
+    // }
+    // =========
+    switch (progress) {
+      case "100":
+        message = `Done`
+        results.push(message)
+        break
+      case progress < 100 ? progress : null:
+        message = `In progress`
+        results.push(message)
+        break
+      case 'null':
+        message = `Ready to delivery`
+        results.push(message)
+        break
+      default:
+        message = 'Not Ordered'
+        results.push(message)
     }
+    // =========== 
+    // // == Саша Палатный
+    // switch (progress) {
+    //   case '100':
+    //     message = 'Done'
+    //     results.push(message)
+    //     break
+    //   case 'null':
+    //     message = 'Ready for delivery'
+    //     results.push(message)
+    //     break
+    //   default:
+    //     if (progress < 100) {
+    //       message = 'In progress'
+    //       results.push(message)
+    //       break
+    //     }
+    // }
+    // // == Саша Палатный
+
   }
   return results.join(', ')
 }

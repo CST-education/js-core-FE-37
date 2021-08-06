@@ -13,9 +13,9 @@
 // import './js/module-4-cb.js'
 // import './js/module-4-stack.js'
 // import './js/module-4-closure.js'
-import './js/module-4-this.js'
+// import './js/module-4-this.js'
 
-// PRACTIC
+// PRACTICE
 // import './practice/module-3.js'
 
 // import './js/this.js'
