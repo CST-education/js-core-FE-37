@@ -15,7 +15,11 @@
 // import './js/module-4-closure.js'
 // import './js/module-4-this.js'
 
+// import './js/module-5-constructors.js'
+
 // PRACTICE
 // import './practice/module-3.js'
+// import './practice/module-4.js'
+import './practice/module-5.js'
 
 // import './js/this.js'
