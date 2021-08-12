@@ -16,6 +16,7 @@
 // import './js/module-4-this.js'
 
 // import './js/module-5-constructors.js'
+// import './js/module-5-classes.js'
 
 // PRACTICE
 // import './practice/module-3.js'
