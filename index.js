@@ -18,9 +18,13 @@
 // import './js/module-5-constructors.js'
 // import './js/module-5-classes.js'
 
+// import './js/module-6-pure-func.js'
+import './js/module-6-methods.js'
+// import './js/module-6-methods-short.js'
+
 // PRACTICE
 // import './practice/module-3.js'
 // import './practice/module-4.js'
-import './practice/module-5.js'
+// import './practice/module-5.js'
 
 // import './js/this.js'
