@@ -26,6 +26,8 @@
 // import './practice/module-3.js'
 // import './practice/module-4.js'
 // import './practice/module-5.js'
-import './practice/module-6.js'
+// import './practice/module-6.js'
+
+import './practice/core-repeat.js'
 
 // import './js/this.js'
