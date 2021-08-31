@@ -22,6 +22,8 @@
 // import './js/module-6-methods.js'
 // import './js/module-6-methods-short.js'
 
+import './js/module-7-DOM.js'
+
 // PRACTICE
 // import './practice/module-3.js'
 // import './practice/module-4.js'
