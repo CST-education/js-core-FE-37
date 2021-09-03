@@ -22,7 +22,8 @@
 // import './js/module-6-methods.js'
 // import './js/module-6-methods-short.js'
 
-import './js/module-7-DOM.js'
+// import './js/module-7-DOM.js'
+import './js/module-7-events.js'
 
 // PRACTICE
 // import './practice/module-3.js'
@@ -30,6 +31,6 @@ import './js/module-7-DOM.js'
 // import './practice/module-5.js'
 // import './practice/module-6.js'
 
-import './practice/core-repeat.js'
+// import './practice/core-repeat.js'
 
 // import './js/this.js'
