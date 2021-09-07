@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+}
+
+#article-list li {
+  margin-right: 10px;
+}
+#article-list li button {
+  padding: 10px;
+  background-color: orange;
+}
+.propagation {
+  padding: 50px;
+  background-color: green;
+}
+#article-prop {
+  background-color: greenyellow;
+  padding: 50px;
+}
+#article-list {
+  background-color: yellow;
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  overflow: hidden;
+  overflow-y: scroll;
+}

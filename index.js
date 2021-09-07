@@ -23,7 +23,12 @@
 // import './js/module-6-methods-short.js'
 
 // import './js/module-7-DOM.js'
-import './js/module-7-events.js'
+// import './js/module-7-events.js'
+
+// import './js/module-8-propagation.js'
+// import './js/module-8-throttle.js'
+// import './js/module-8-debounce.js'
+import './js/module-8-IntersectionObserver.js'
 
 // PRACTICE
 // import './practice/module-3.js'
