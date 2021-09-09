@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FE-37 Js</title>
+    <link rel="stylesheet" href="../styles/module-8.css" />
+    <link rel="stylesheet" href="../styles/modal.css" />
+  </head>
+  <body>
+    <header class="header">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="./module-8.html">MODULE 8</a></li>
+      </ul>
+    </header>
+    <main>
+      <form class="form" id="form">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="filter this items"
+        />
+      </form>
+
+      <ul class="postsList" id="list"></ul>
+
+      <!-- MODAL WINDOW -->
+      <div class="backDrop isHidden closeModal">
+        <div class="content">
+          <p>Hello</p>
+          <button class="closeModal" id="closeModal">x</button>
+        </div>
+      </div>
+      <!-- MODAL WINDOW -->
+    </main>
+
+    <script src="../practice/module-8.js" type="module"></script>
+  </body>
+</html>
