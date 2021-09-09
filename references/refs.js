@@ -11,6 +11,7 @@ export default {
   modal: document.querySelector('.backDrop'),
   // close button
   closeBtn: document.getElementById('closeModal'),
+  modalContent: document.querySelector('.content'),
   // form
   form: document.getElementById('form'),
 }

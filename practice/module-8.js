@@ -3,7 +3,7 @@ import data from '../data/module-8.js'
 // console.log(data)
 // ИМПОРТ ДОСТУПОВ К DOM-ЭЛЕМЕНТАМ (refs)
 import refs from '../references/refs.js'
-const { list, modal, closeBtn, form } = refs
+const { list, modal, closeBtn, modalContent } = refs
 // console.log(list, modal, form)
 // ШАБЛОН РАЗМЕТКИ
 const item = `
@@ -29,7 +29,7 @@ const item = `
 function createItems(array) {
   return array
     .map((elem) => {
-      const { image, title = 'TITLE', text, button } = elem
+      const { image, title = 'TITLE', text, button, id } = elem
       // console.log(image, title, text, button)
       return `
         <li class="item">
@@ -39,7 +39,7 @@ function createItems(array) {
           <div class="cardInfo">
             <h3 class="title">${title}</h3>
             <p class="text">${text}</p>
-            <button class="link" type="button">${button}</button>
+            <button id=${id} class="link" type="button">${button}</button>
           </div>
         </li>`
     })
@@ -88,10 +88,15 @@ function hideElement(element) {
 
 list.addEventListener('click', (e) => {
   const condition = e.target.nodeName === 'BUTTON'
-  // console.log(condition)
   if (condition) {
     // modal.classList.remove('isHidden')
     showElement(modal)
+    const modalImage = document.createElement('img')
+    const link = data.find((object) => object.id === e.target.id).image
+    modalImage.setAttribute('src', link)
+    console.log(modalImage)
+
+    modalContent.append(modalImage)
   }
 })
 // Закрываем модальное окно

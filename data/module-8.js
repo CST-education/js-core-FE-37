@@ -1,5 +1,6 @@
 export default [
   {
+    id: '1',
     image:
       'https://images.pexels.com/photos/3024453/pexels-photo-3024453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Thousands',
@@ -8,6 +9,7 @@ export default [
     button: 'read more',
   },
   {
+    id: '2',
     image:
       'https://images.pexels.com/photos/7005932/pexels-photo-7005932.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'The personage',
@@ -16,6 +18,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '3',
+
     image:
       'https://images.pexels.com/photos/3457336/pexels-photo-3457336.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Old crone',
@@ -24,6 +28,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '4',
+
     image:
       'https://images.pexels.com/photos/1420016/pexels-photo-1420016.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Fine singers!',
@@ -32,6 +38,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '5',
+
     image:
       'https://images.pexels.com/photos/7499780/pexels-photo-7499780.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'By the mercy',
@@ -40,6 +48,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '6',
+
     image:
       'https://images.pexels.com/photos/8091469/pexels-photo-8091469.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Upon my soul',
@@ -48,6 +58,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '7',
+
     image:
       'https://images.pexels.com/photos/2253897/pexels-photo-2253897.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'The piece',
@@ -56,6 +68,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '8',
+
     image:
       'https://images.pexels.com/photos/5486845/pexels-photo-5486845.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Four',
@@ -64,6 +78,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '9',
+
     image:
       'https://images.pexels.com/photos/2266105/pexels-photo-2266105.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: '',
@@ -71,6 +87,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '10',
+
     image:
       'https://images.pexels.com/photos/5945754/pexels-photo-5945754.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'In the middle',
@@ -79,6 +97,8 @@ export default [
     button: 'read more',
   },
   {
+    id: '11',
+
     image:
       'https://images.pexels.com/photos/6633978/pexels-photo-6633978.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'Reader picture',
@@ -87,6 +107,7 @@ export default [
     button: 'read more',
   },
   {
+    id: '12',
     image:
       'https://images.pexels.com/photos/6800551/pexels-photo-6800551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'With the reader’s',
@@ -95,6 +116,7 @@ export default [
     button: 'read more',
   },
   {
+    id: '13',
     image:
       'https://images.pexels.com/photos/1054018/pexels-photo-1054018.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     title: 'If it could',
