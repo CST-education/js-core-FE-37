@@ -28,7 +28,10 @@
 // import './js/module-8-propagation.js'
 // import './js/module-8-throttle.js'
 // import './js/module-8-debounce.js'
-import './js/module-8-IntersectionObserver.js'
+// import './js/module-8-IntersectionObserver.js'
+
+// import './js/module-10-JSON.js'
+import './js/module-10-localStorage.js'
 
 // PRACTICE
 // import './practice/module-3.js'
