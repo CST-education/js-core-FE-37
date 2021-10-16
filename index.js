@@ -31,7 +31,8 @@
 // import './js/module-8-IntersectionObserver.js'
 
 // import './js/module-10-JSON.js'
-import './js/module-10-localStorage.js'
+// import './js/module-10-localStorage.js'
+import './js/module-12-fetch.js'
 
 // PRACTICE
 // import './practice/module-3.js'
@@ -42,3 +43,37 @@ import './js/module-10-localStorage.js'
 // import './practice/core-repeat.js'
 
 // import './js/this.js'
+
+// =====================================
+const inputSearch = document.getElementById('searchValue')
+inputSearch.addEventListener(
+  'input',
+  _.debounce((e) => {
+    //   e.preventDefault(); - для формы
+    console.log('VALUE:', e.target.value)
+    if (e.target.value.length > 0) {
+      fetchCountries(e.target.value)
+        .then((r) => {
+          console.log(r)
+        })
+        .catch((e) => {
+          console.log(e)
+        })
+    }
+  }, 500),
+)
+
+function fetchCountries(searchQuery) {
+  return fetch(`https://restcountries.com/v2/name/${searchQuery}`)
+    .then((response) => {
+      if (response.status !== 404) {
+        return response.json()
+      }
+    })
+    .catch((error) => {
+      const myError = notice({
+        text: 'Error 404.',
+        modules: new Map([...defaultModules, [PNotifyDesktop, {}]]),
+      })
+    })
+}
